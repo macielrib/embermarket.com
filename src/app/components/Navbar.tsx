@@ -14,7 +14,7 @@ const Navbar = () => {
   const navLinks = [
     {
       name: "Ver Contas",
-      href: "/trabalhos",
+      href: "/categorias",
     },
     {
       name: "Avaliações",

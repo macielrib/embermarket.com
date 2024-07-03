@@ -65,7 +65,7 @@ export default function Home() {
                 Comunidade Discord <FaDiscord className="h-4 w-4" />
               </Link>
               <Link
-                href="#"
+                href="/categorias/"
                 className="py-3 px-4 bg-red-500 text-white font-dmsans font-medium text-sm rounded-xl flex items-center gap-2 transition duration-300 hover:scale-105 z-50"
               >
                 Explorar Contas <MdTravelExplore className="h-4 w-4" />

@@ -44,7 +44,7 @@ const Features = () => {
               />
             </div>
 
-            <Link href="/produtos">
+            <Link href="/categorias/full-acesso">
               <div className="flex flex-col gap-1 mt-4 px-4">
                 <h2 className="text-lg font-dmsans font-bold group-hover:text-red-500 transition duration-300">
                   Contas Full-Acesso
@@ -88,7 +88,7 @@ const Features = () => {
               />
             </div>
 
-            <Link href="/produtos">
+            <Link href="/categorias/full-acesso">
               <div className="flex flex-col gap-1 mt-4 px-4">
                 <h2 className="text-lg font-dmsans font-bold group-hover:text-red-500 transition duration-300">
                   Categoria Non Full Access (NFA)
@@ -132,7 +132,7 @@ const Features = () => {
               />
             </div>
 
-            <Link href="/produtos">
+            <Link href="/categorias/full-acesso">
               <div className="flex flex-col gap-1 mt-4 px-4">
                 <h2 className="text-lg font-dmsans font-bold group-hover:text-red-500 transition duration-300">
                   Categorias de Elo
