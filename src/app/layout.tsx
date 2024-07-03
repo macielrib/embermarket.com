@@ -7,48 +7,49 @@ import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const viewport: Viewport = {
-
-  themeColor: "#4f46e5",
-}
+  themeColor: "#ef4444", // text-red-500 in hex
+};
 
 export const metadata: Metadata = {
-  title: "Spacefy — Criação de Sites e Serviços Web",
-  description: "A Spacefy oferece serviços de criação de sites inovadores para destacar seu negócio no mercado digital.",
+  title: "Embermarket — Contas Exclusivas de Valorant",
+  description: "Encontre as melhores contas de Valorant à venda na Embermarket. Contas exclusivas, seguras e prontas para jogar!",
   alternates: {
-    canonical: 'https://spacefy.com.br'
+    canonical: 'https://embermarket.com.br'
   },
-  authors: [{ name: 'Spacefy Oficial', url: "https://spacefy.com.br" }],
+  authors: [{ name: 'Embermarket', url: "https://embermarket.com.br" }],
   robots: {
     index: true,
     follow: true
   },
   keywords: [
-    "spacefy",
-    "spacefy sites",
-    "spacefy agência",
-    "agência digital",
-    "serviços web",
-    "agência de sites",
-    "criação de sites",
-    "sites modernos",
-    "sites inovadores",
-    "desenvolvimento web",
+    "embermarket",
+    "contas valorant",
+    "comprar contas valorant",
+    "vendas de contas valorant",
+    "contas exclusivas valorant",
+    "contas seguras valorant",
+    "loja de contas valorant",
+    "contas de jogos",
+    "valorant",
+    "comprar contas de jogos",
+    "contas de valorant prontas",
   ],
   openGraph: {
-    title: "Spacefy — Criação de Sites e Serviços Web",
-    siteName: "Spacefy",
-    url: "https://spacefy.com.br",
+    title: "Embermarket — Contas Exclusivas de Valorant",
+    siteName: "Embermarket",
+    url: "https://embermarket.com.br",
     locale: "pt_BR",
-    description: "A Spacefy oferece serviços de criação de sites inovadores para destacar seu negócio no mercado digital.",
+    description: "Encontre as melhores contas de Valorant à venda na Embermarket. Contas exclusivas, seguras e prontas para jogar!",
     images: ["https://i.imgur.com/AFFPb4v.png"]
   },
   twitter: {
-    title: "Spacefy — Criação de Sites e Serviços Web",
-    description: "A Spacefy oferece serviços de criação de sites inovadores para destacar seu negócio no mercado digital.",
+    title: "Embermarket — Contas Exclusivas de Valorant",
+    description: "Encontre as melhores contas de Valorant à venda na Embermarket. Contas exclusivas, seguras e prontas para jogar!",
     card: "summary_large_image",
     images: ["https://i.imgur.com/AFFPb4v.png"],
   },
 };
+
 
 
 export default function RootLayout({
