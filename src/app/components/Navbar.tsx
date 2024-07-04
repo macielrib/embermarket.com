@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FaCartShopping, FaDiscord } from "react-icons/fa6";
 import { TbLogin2, TbLogout2, TbLayoutGridFilled } from "react-icons/tb";
 import { MdAdminPanelSettings, MdViewCarousel } from "react-icons/md";
-import { Button } from "flowbite-react";
+import { FaFire } from "react-icons/fa";
 
 const contaAdmin = true;
 const contaLogada = true;
@@ -38,7 +38,7 @@ const Navbar = () => {
 
           <div className="flex h-14 items-center justify-between lg:justify-evenly px-6">
             {/* Seção Logo */}
-            <Link href='/' className="font-poppins font-bold text-3xl text-red-500">Ember<span className="text-white text-3xl">market</span></Link>
+            <Link href='/' className="font-poppins font-bold text-2xl text-red-500 flex items-center"><FaFire className="mr-2"/> Ember<span className="text-white text-2xl">market</span></Link>
 
             {/* Menu Desktop */}
     
