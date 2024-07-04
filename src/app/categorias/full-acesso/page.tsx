@@ -38,7 +38,7 @@ const FullAcesso = () => {
               <div className="absolute inset-0 flex items-center justify-center gap-2">
                 <Link
                   className="bg-white py-2 px-2 rounded-xl text-black gap-2 items-center font-dmsans text-sm font-semibold hidden group-hover:inline-flex group-hover:animate-fadeIn transition duration-300 hover:-translate-y-1  hover:bg-red-500 "
-                  href="comprar/atendimento"
+                  href="/checkout/chat"
                 >
                   Comprar Conta <RiBankFill className="text-lg" />
                 </Link>
@@ -116,8 +116,7 @@ const FullAcesso = () => {
                     className="bg-white font-dmsans text-sm font-bold hover:scale-105 text-black py-2 px-4 rounded-xl  hover:bg-green-300 transition duration-300 inline-flex gap-2 items-center group"
                     href="/"
                   >
-                    
-                    <IoMdCart className="text-xl"/>
+                    <IoMdCart className="text-xl" />
                   </Link>
                 </Tooltip>
               </div>
@@ -134,7 +133,7 @@ const FullAcesso = () => {
               <div className="absolute inset-0 flex items-center justify-center gap-2">
                 <Link
                   className="bg-white py-2 px-2 rounded-xl text-black gap-2 items-center font-dmsans text-sm font-semibold hidden group-hover:inline-flex group-hover:animate-fadeIn transition duration-300 hover:-translate-y-1  hover:bg-red-500 "
-                  href="comprar/atendimento"
+                  href="/checkout/chat"
                 >
                   Comprar Conta <RiBankFill className="text-lg" />
                 </Link>
@@ -212,8 +211,7 @@ const FullAcesso = () => {
                     className="bg-white font-dmsans text-sm font-bold hover:scale-105 text-black py-2 px-4 rounded-xl  hover:bg-green-300 transition duration-300 inline-flex gap-2 items-center group"
                     href="/"
                   >
-                    
-                    <IoMdCart className="text-xl"/>
+                    <IoMdCart className="text-xl" />
                   </Link>
                 </Tooltip>
               </div>
@@ -230,7 +228,7 @@ const FullAcesso = () => {
               <div className="absolute inset-0 flex items-center justify-center gap-2">
                 <Link
                   className="bg-white py-2 px-2 rounded-xl text-black gap-2 items-center font-dmsans text-sm font-semibold hidden group-hover:inline-flex group-hover:animate-fadeIn transition duration-300 hover:-translate-y-1  hover:bg-red-500 "
-                  href="comprar/atendimento"
+                  href="/checkout/chat"
                 >
                   Comprar Conta <RiBankFill className="text-lg" />
                 </Link>
@@ -243,52 +241,54 @@ const FullAcesso = () => {
               </div>
             </div>
 
-            <div className="flex justify-between gap-2 items-baseline">
-              <h3 className="text-xl font-dmsans font-bold text-white mt-4 transition ">
-                <a href="/pagina-da-conta">Conta Full-Acesso</a>
-              </h3>
+        
+              <div className="flex justify-between gap-2 items-baseline">
+                <h3 className="text-xl font-dmsans font-bold text-white mt-4 transition ">
+                  <a href="/pagina-da-conta">Conta Full-Acesso</a>
+                </h3>
 
-              <p className="text-[#42949F] font-dmsans font-bold text-md inline-flex gap-2 items-center">
-                Elo Platina II
-                <span className="text-[#ccc] font-medium font-dmsans text-sm">
-                  (112 Skins)
-                </span>
+                <p className="text-[#42949F] font-dmsans font-bold text-md inline-flex gap-2 items-center">
+                  Elo Platina II
+                  <span className="text-[#ccc] font-medium font-dmsans text-sm">
+                    (112 Skins)
+                  </span>
+                </p>
+              </div>
+
+              <p className="text-[#ccc] font-dmsans font-normal text-sm mt-2 transition ">
+                Esta conta foi comprada diretamente com o dono com acesso a
+                todos os dados e não possui nenhum risco.
               </p>
-            </div>
 
-            <p className="text-[#ccc] font-dmsans font-normal text-sm mt-2 transition ">
-              Esta conta foi comprada diretamente com o dono com acesso a todos
-              os dados e não possui nenhum risco.
-            </p>
-
-            <ul className="py-6 text-white flex flex-col gap-2">
-              <li className=" font-dmsans font-medium text-[#ccc] text-sm transition inline-flex items-center gap-2">
-                <TbShield className="text-lg text-red-500" />
-                Dados + IDs Transações
-              </li>
-              <li className=" font-dmsans font-medium text-[#ccc] text-sm transition inline-flex items-center gap-2">
-                <TbShield className="text-lg text-red-500" />
-                Dados de Recuperação
-              </li>
-              <li className=" font-dmsans font-medium text-[#ccc] text-sm transition inline-flex items-center gap-2">
-                <TbShield className="text-lg text-red-500" />
-                Sem Chances de Recuperação
-              </li>
-            </ul>
-            <ul className=" text-white flex flex-col gap-2">
-              <li className=" font-dmsans font-medium text-[#ccc] text-sm transition inline-flex items-center gap-2">
-                <TbWorldCheck className="text-lg text-red-500" />
-                Pode alterar e-mail e senha
-              </li>
-              <li className=" font-dmsans font-medium text-[#ccc] text-sm transition inline-flex items-center gap-2">
-                <TbWorldCheck className="text-lg text-red-500" />
-                Sem número de verificação
-              </li>
-              <li className=" font-dmsans font-medium text-[#ccc] text-sm transition inline-flex items-center gap-2">
-                <TbWorldCheck className="text-lg text-red-500" />
-                Garantia de 3 meses
-              </li>
-            </ul>
+              <ul className="py-6 text-white flex flex-col gap-2">
+                <li className=" font-dmsans font-medium text-[#ccc] text-sm transition inline-flex items-center gap-2">
+                  <TbShield className="text-lg text-red-500" />
+                  Dados + IDs Transações
+                </li>
+                <li className=" font-dmsans font-medium text-[#ccc] text-sm transition inline-flex items-center gap-2">
+                  <TbShield className="text-lg text-red-500" />
+                  Dados de Recuperação
+                </li>
+                <li className=" font-dmsans font-medium text-[#ccc] text-sm transition inline-flex items-center gap-2">
+                  <TbShield className="text-lg text-red-500" />
+                  Sem Chances de Recuperação
+                </li>
+              </ul>
+              <ul className=" text-white flex flex-col gap-2">
+                <li className=" font-dmsans font-medium text-[#ccc] text-sm transition inline-flex items-center gap-2">
+                  <TbWorldCheck className="text-lg text-red-500" />
+                  Pode alterar e-mail e senha
+                </li>
+                <li className=" font-dmsans font-medium text-[#ccc] text-sm transition inline-flex items-center gap-2">
+                  <TbWorldCheck className="text-lg text-red-500" />
+                  Sem número de verificação
+                </li>
+                <li className=" font-dmsans font-medium text-[#ccc] text-sm transition inline-flex items-center gap-2">
+                  <TbWorldCheck className="text-lg text-red-500" />
+                  Garantia de 3 meses
+                </li>
+              </ul>
+      
             <div className="flex flex-col lg:flex-row gap-2 items-center justify-between mt-4">
               <h1 className="text-white font-dmsans font-semibold text-2xl inline-flex gap-2 items-center transition ">
                 R$499.99{" "}
@@ -308,8 +308,7 @@ const FullAcesso = () => {
                     className="bg-white font-dmsans text-sm font-bold hover:scale-105 text-black py-2 px-4 rounded-xl  hover:bg-green-300 transition duration-300 inline-flex gap-2 items-center group"
                     href="/"
                   >
-                    
-                    <IoMdCart className="text-xl"/>
+                    <IoMdCart className="text-xl" />
                   </Link>
                 </Tooltip>
               </div>
