@@ -94,7 +94,7 @@ export default function Home() {
 
                 {/* Main Image */}
                 <img
-                  src="https://cdn.discordapp.com/attachments/1252999386808717432/1257795930506395738/image-15.png?ex=66865dfe&is=66850c7e&hm=48d56f437a589d62c8abf917af9ca1156be0a580e5c744387ceb2dc7ba5fc92c&"
+                  src="/inventory/inventory_1.png"
                   className="rounded-2xl w-10/12 max-w-7xl max-h-[40rem] relative z-10"
                   alt="Main"
                 />

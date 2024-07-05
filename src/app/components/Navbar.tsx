@@ -1,16 +1,19 @@
 "use client";
 
 import Link from "next/link";
-import { FaCartShopping, FaDiscord } from "react-icons/fa6";
+import { FaCartShopping } from "react-icons/fa6";
 import { TbLogin2, TbLogout2, TbLayoutGridFilled } from "react-icons/tb";
 import { MdAdminPanelSettings, MdViewCarousel } from "react-icons/md";
 import { FaFire } from "react-icons/fa";
+
+
+import DropdownNav from "./ui/Dropdown";
+import Tooltip from "./ui/Tooltip";
 
 const contaAdmin = true;
 const contaLogada = true;
 
 const Navbar = () => {
-
   const navLinks = [
     {
       name: "Ver Contas",
@@ -38,10 +41,16 @@ const Navbar = () => {
 
           <div className="flex h-14 items-center justify-between lg:justify-evenly px-6">
             {/* Seção Logo */}
-            <Link href='/' className="font-poppins font-bold text-2xl text-red-500 flex items-center"><FaFire className="mr-2"/> Ember<span className="text-white text-2xl">market</span></Link>
+            <Link
+              href="/"
+              className="font-poppins font-bold text-2xl text-red-500 flex items-center"
+            >
+              <FaFire className="mr-2" /> Ember
+              <span className="text-white text-2xl">market</span>
+            </Link>
 
             {/* Menu Desktop */}
-    
+
             <ul className="hidden lg:flex items-center lg:ml-12">
               {navLinks.map((link, index) => (
                 <li
@@ -69,38 +78,7 @@ const Navbar = () => {
 
               {contaLogada ? (
                 <>
-                  <Link
-                    href="/"
-                    className="text-xl   flex items-center gap-2 transition-all duration-300 hover:-translate-y-1"
-                  >
-                    <FaCartShopping className="text-white" />
-                    <span className="bg-[#ff495f] h-4 w-4 text-center rounded-full text-black font-dmsans font-semibold text-xs ">
-                      0
-                    </span>
-                  </Link>
-
-                  {contaAdmin ? (
-                    <>
-                      <Link
-                        href="/"
-                        className="flex items-center gap-2 transition-all duration-300 hover:-translate-y-1"
-                      >
-                        <MdAdminPanelSettings className="text-red-500 text-3xl" />
-                      </Link>
-                    </>
-                  ) : null}
-
-                  <Link
-                    href={""}
-                    className="py-2 px-4 rounded-lg font-dmsans font-medium text-sm flex items-center gap-2  bg-red-500 text-white transition-all duration-300 hover:-translate-y-1"
-                  >
-                    <TbLogout2 className="w-5 h-5" /> Sair de Maciel?
-                  </Link>
-                </>
-              ) : (
-                <>
-
-                    {" "}
+                  <Tooltip text="Nenhum item no carrinho">
                     <Link
                       href="/"
                       className="text-xl   flex items-center gap-2 transition-all duration-300 hover:-translate-y-1"
@@ -110,8 +88,37 @@ const Navbar = () => {
                         0
                       </span>
                     </Link>
-             
+                  </Tooltip>
 
+                  {contaAdmin ? (
+                    <>
+                        <Tooltip text="Acesse o Painel de Controle">
+                        <Link
+                        href="/"
+                        className="flex items-center gap-2 transition-all duration-300 hover:-translate-y-1"
+                      >
+                        <MdAdminPanelSettings className="text-red-500 text-3xl" />
+                      </Link>
+                  </Tooltip>
+
+                    
+                    </>
+                  ) : null}
+
+                  <DropdownNav />
+                </>
+              ) : (
+                <>
+                  {" "}
+                  <Link
+                    href="/"
+                    className="text-xl   flex items-center gap-2 transition-all duration-300 hover:-translate-y-1"
+                  >
+                    <FaCartShopping className="text-white" />
+                    <span className="bg-[#ff495f] h-4 w-4 text-center rounded-full text-black font-dmsans font-semibold text-xs ">
+                      0
+                    </span>
+                  </Link>
                   <Link
                     href="/"
                     className="py-2 px-4 rounded-lg font-dmsans font-medium text-sm flex items-center gap-2  bg-red-500 text-white transition-all duration-300 hover:-translate-y-1"

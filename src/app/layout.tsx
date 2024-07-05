@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,13 +39,13 @@ export const metadata: Metadata = {
     url: "https://embermarket.com.br",
     locale: "pt_BR",
     description: "Encontre as melhores contas de Valorant à venda na Embermarket. Contas exclusivas, seguras e prontas para jogar!",
-    images: ["https://i.imgur.com/AFFPb4v.png"]
+    images: ["/banner/embermarket.png"]
   },
   twitter: {
     title: "Embermarket — Contas Exclusivas de Valorant",
     description: "Encontre as melhores contas de Valorant à venda na Embermarket. Contas exclusivas, seguras e prontas para jogar!",
     card: "summary_large_image",
-    images: ["https://i.imgur.com/AFFPb4v.png"],
+    images: ["/banner/embermarket.png"],
   },
 };
 
