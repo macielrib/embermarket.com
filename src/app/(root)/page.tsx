@@ -107,7 +107,6 @@ export default function Home() {
       <Features/>
       <Product/>
       <Reviews/>
-      <Footer/>
     </>
   );
 }

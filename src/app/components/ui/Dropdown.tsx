@@ -4,9 +4,10 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { PiUserCircleDashedFill } from "react-icons/pi";
 import { IoMdArrowDropdown } from "react-icons/io";
-import { TbShoppingCartShare } from "react-icons/tb";
-import { MdLock } from "react-icons/md";
-import { TbLogout2 } from "react-icons/tb";
+import { RiUserSearchLine } from "react-icons/ri";
+import { BiWallet } from "react-icons/bi";
+import { CgLogOut } from "react-icons/cg";
+
 
 const DropdownNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,33 +47,33 @@ const DropdownNav = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-[#171717]   transition-opacity duration-300 ease-in-out animate-fadeIn text-white">
+        <div className="absolute right-0 mt-2 w-52 rounded-md shadow-lg bg-[#111]   transition-opacity duration-300 ease-in-out animate-fadeIn text-white">
           <div
-            className="py-1"
+            className="flex flex-col items-center py-2"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="options-menu"
           >
             <Link
-              href="/meus-pedidos"
-              className="flex items-center gap-2 font-dmsans font-semibold px-4 py-3  text-md text-white transition duration-300 hover:bg-[#222]"
+              href="/conta"
+              className="flex items-center gap-3 font-dmsans w-48 font-bold px-4 py-3 rounded-xl  text-md text-white transition duration-300 hover:bg-[#171717] hover:scale-105 group"
               role="menuitem"
             >
-              <TbShoppingCartShare className="text-red-600 text-xl"/> Meus Pedidos
-            </Link>
-            <Link
-              href="/minhas-informacoes"
-              className="flex items-center gap-2 font-dmsans font-semibold px-4 py-3 text-md text-white transition duration-300 hover:bg-[#222]"
-              role="menuitem"
-            >
-              <MdLock className="text-red-600 text-xl"/> Minhas Informações
+              <RiUserSearchLine className="text-red-500 text-2xl"/> Minha Conta
             </Link>
             <Link
               href="/meus-pedidos"
-              className="flex items-center gap-2 font-dmsans font-semibold px-4 py-3 text-md text-white transition duration-300 hover:bg-[#222]"
+          className="flex items-center gap-3 font-dmsans w-48 font-bold px-4 py-3 rounded-xl  text-md text-white transition duration-300 hover:bg-[#171717] hover:scale-105 group"
               role="menuitem"
             >
-              <TbLogout2 className="text-red-600"/> Sair da Conta
+              <BiWallet className="text-red-500 text-2xl"/> Meus Pedidos
+            </Link>
+            <Link
+              href="/meus-pedidos"
+            className="flex items-center gap-3 font-dmsans w-48 font-bold px-4 py-3 rounded-xl  text-md text-white transition duration-300 hover:bg-[#171717] hover:scale-105 group"
+              role="menuitem"
+            >
+              <CgLogOut className="text-red-500 text-2xl"/> Sair da Conta
             </Link>
           </div>
         </div>

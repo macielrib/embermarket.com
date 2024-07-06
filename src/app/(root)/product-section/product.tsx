@@ -39,7 +39,7 @@ const Features = () => {
             <div>
               <img
                 className="object-cover h-64 w-full"
-                src="/backgrounds/neon.jpg"
+                src="https://media.discordapp.net/attachments/1252999386808717432/1258855928627728404/image.png?ex=66899071&is=66883ef1&hm=22ee2973d944080573ac7ee968370a590125295b97a8fcb29391e93f85f51a13&=&format=webp&quality=lossless"
                 alt="Categoria Contas Full-Acesso"
               />
             </div>

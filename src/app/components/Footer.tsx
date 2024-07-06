@@ -6,7 +6,7 @@ import { HiNewspaper } from "react-icons/hi";
 const Footer = () => {
   return (
     <>
-      <section className="bg-black py-12 px-6">
+      {/* <section className="bg-black py-12 px-6">
         <div className="flex flex-col justify-center mx-auto group relative">
           <h1 className="mt-4 mb-4 text-4xl md:text-5xl lg:text-6xl font-bold font-poppins max-w-5xl flex items-center gap-1 mx-auto z-50">
             Ainda com Perguntas?
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
 
       
-      </section>
+      </section> */}
       <div className="py-4 flex flex-col justify-center mx-auto">
           <h1 className="text-red-500 font-dmsans text-sm font-normal mx-auto">Ember<span className="text-white">market — desde 2023</span></h1>
           <p className="text-center text-sm font-dmsans text-[#fff9] font-normal max-w-xl mx-auto">Todos os Direitos Reservados.</p>
